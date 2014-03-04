@@ -1,0 +1,5 @@
+package com.auth.login;
+
+public class CustomAuthenticationProvider {
+
+}
