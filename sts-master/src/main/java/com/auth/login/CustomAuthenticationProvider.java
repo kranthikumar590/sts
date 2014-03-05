@@ -24,7 +24,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 		String password = authentication.getCredentials().toString();
 		
 
-		String role = "ROLE_USER";
+		String role = "ROLE_SENIORADMIN";
 		try {
 			
 		} catch (NullPointerException e) {

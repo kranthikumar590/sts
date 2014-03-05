@@ -32,4 +32,10 @@ public class LoginController {
 	  return "login";  
 	   
 	 }  
+	 @RequestMapping(value="/404", method = RequestMethod.GET)  
+	 public String accessDenied(ModelMap model) {  
+	   
+	  return "404";  
+	   
+	 }  
 }
