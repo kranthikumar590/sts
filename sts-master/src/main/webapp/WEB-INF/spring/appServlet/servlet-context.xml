@@ -35,7 +35,7 @@
     <!-- MongoTemplate for connecting and quering the documents in the database -->
     <beans:bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
         <beans:constructor-arg name="mongo" ref="mongo" />
-        <beans:constructor-arg name="databaseName" value="STS" />
+        <beans:constructor-arg name="databaseName" value="sts" />
     </beans:bean>
-	
+	<beans:bean id="loginService" class="com.auth.login.LoginService"/>
 </beans:beans>

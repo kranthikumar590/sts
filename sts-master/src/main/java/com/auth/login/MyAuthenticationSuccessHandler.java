@@ -25,17 +25,14 @@ public class MyAuthenticationSuccessHandler extends SimpleUrlAuthenticationSucce
     	Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String name = auth.getName(); //get logged in username
         
-        String role="ROLE_USER";
+        String role="ROLE_SENIORADMIN";
         try{
-        	
-        	
-           
-            
+        	           
             if(role.equals("ROLE_JUNIORADMIN")){
             	setDefaultTargetUrl("/junior/homepage");
             }
             if(role.equals("ROLE_SENIORADMIN")){
-            	setDefaultTargetUrl("/senior/homepage");
+            	setDefaultTargetUrl("/home");
             }	
             super.onAuthenticationSuccess(request, response, authentication);
         }

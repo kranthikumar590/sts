@@ -9,12 +9,12 @@
    <http auto-config="true">
 			
 		
-		<intercept-url pattern="/home*" access="ROLE_SENIORADMIN" />
+		<intercept-url pattern="/homepage*" access="ROLE_SENIORADMIN" />
 		
 		<form-login login-page="/login" 
 			default-target-url="/home"
 			authentication-failure-url="/loginfailed"
-			
+			 
 		 />
 		  
 		<logout logout-success-url="/logout" />
@@ -26,5 +26,5 @@
         <authentication-provider ref="customAuthenticationProvider" />
     </authentication-manager>
     <beans:bean id="customAuthenticationProvider" class="com.auth.login.CustomAuthenticationProvider"/>
-    
+     
 </beans:beans>
